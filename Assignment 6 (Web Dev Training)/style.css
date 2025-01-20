@@ -1,0 +1,178 @@
+body {
+  background-color: #dcedea;
+}
+
+section:not(.banner) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  margin: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  width: 200px;
+  margin-left: -60px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.banner {
+  width: 500px;
+  margin-right: 60px;
+}
+
+.form-container {
+  background-color: white;
+  border: 10px;
+  padding: 30px;
+  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  box-sizing: border-box;
+}
+
+a {
+  color: green;
+}
+
+label {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.register-btn {
+  background-color: #3cbab2;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input,
+select {
+  width: 94%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: auto;
+  flex: 0 50%;
+}
+
+.form-container > div {
+  flex: 0 50%;
+}
+
+.form-group > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.form-container p {
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  section:not(.banner) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner {
+    width: 100%;
+    margin-right: -400px;
+  }
+
+  .form-container {
+    width: 80%;
+    margin: 30px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-group > div {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 35px;
+    margin-left: -150px;
+  }
+
+  .banner p {
+    margin-left: -150px;
+    width: 500px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .register-btn {
+    width: 100%;
+  }
+
+  img {
+    margin-left: -200px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .form-container {
+    width: 140%;
+    margin: 20px;
+  }
+
+  .register-btn {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  input {
+    width: 93%;
+  }
+
+  img {
+    display: flex;
+    position: absolute;
+    top: -20px;
+    width: 200px;
+    margin-left: -220px;
+  }
+
+  .banner {
+    margin-left: -180px;
+  }
+
+  .banner p {
+    width: 350px;
+  }
+}

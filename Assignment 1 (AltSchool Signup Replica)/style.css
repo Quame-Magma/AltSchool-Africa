@@ -1,0 +1,348 @@
+body {
+    background-color: #fffcf8;
+  }
+  
+  .main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    /* flex-wrap: wrap; */
+  }
+
+  .main-nav {
+    background-color: wheat;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .main-nav li, .main-nav a {
+    color: rgb(106, 98, 98);
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Euclid-Regular";
+    border: white 2px;
+    border-radius: 5px;
+    padding: 5px
+  }
+
+  .main > section {
+    flex: 0 50%;
+  }
+
+  section {
+    display: flex;flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 60px; */
+  }
+  
+  .Banner {
+    background-color: #fffcf8;
+    display: flex;        
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;      
+    width: 100%;            
+    height: 100vh;              
+    overflow: hidden;           
+    box-sizing: border-box;
+    padding: 80px;     
+}
+
+  .Banner h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    text-align: center;
+    width: 400px;
+  }
+  
+  img {
+    flex: 1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  h1 {
+    font-family: "Almarena-Medium";
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .form-field p {
+    font-family: "Euclid-Light";
+  }
+  
+  .banner {
+    width: 500px;
+    margin-right: 60px;
+  }
+  
+  .form-container {
+    background-color: white;
+    border: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-sizing: border-box;
+  }
+  
+  a {
+    color: #0367f2;
+  }
+  
+  label {
+    font-family: "Euclid-Regular";
+    font-size: 13px;
+    margin: 5px 5px 5px 0;
+    padding: 5px;
+    display: block;
+  }
+  
+  .register-btn {
+    background-color: #0367f2;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input,
+  select {
+    width: 94%;
+    padding: 10px;
+    border: 1px solid rgb(200, 192, 192);
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  input:focus {
+    outline: 2px solid #0367f2;
+  }
+
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: auto;
+    flex: 0 50%;
+  }
+  
+  .form-container > div {
+    flex: 50%;
+  }
+  
+  .form-group > div {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .form-container p {
+    font-size: 12px;
+  }
+
+  span {
+    position: relative;
+    font-family: "Euclid-Regular";
+    font-size: 14px;
+    font-weight: bold;
+    top: 15px;
+    right: -330px;
+  }
+  
+  span a {
+    text-decoration: none;
+  }
+
+  .copyright, .contact-details {
+    font-family: "Euclid-Regular";
+    font-size: 15px;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    width: 16px;
+    height: 16px;
+    padding-bottom: 10px;
+  }
+
+  .socials > div {
+    flex: 25%;
+  }
+
+  .socials img {
+    color: #0367f2;
+  }
+
+  .copyright, .contact-details {
+    margin: -10px;
+  }
+
+  .copyright {
+    margin-top: 5px;
+  }
+
+  .personal-details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+  }
+
+  .personal-details h4, p {
+    font-family: "Euclid-Regular";
+    font-size: 15px;
+  }
+
+  .personal-details h1, h4 {
+    margin-bottom: -15px;
+  }
+
+  .footer-copyright, .footer-contact-details {
+    font-family: "Euclid-light";
+    margin: -20px;
+  }
+
+  .about-me {
+    padding: 20px;
+  }
+
+  .about-me p {
+    font-family: "Euclid-light";
+    font-size: 15px;
+  }
+
+
+  @media (max-width: 768px) {
+    .Banner {
+      display: none;
+    }
+
+    body {
+        background-color: white;
+    }
+  
+    .form-container {
+      width: 80%;
+      margin: 30px;
+      height: 100%;
+    }
+
+    input, select {
+      width: 200px;
+      margin-right: 200px;
+    }
+    
+    .form-field {
+        margin-top: 40px;
+        width: 100%;
+    }
+  
+    .form-group {
+        display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      flex: 100%;
+      width: 100%;
+    }
+
+    .form-group > div {
+      width: 100%;
+    }
+  
+    .register-btn {
+      width: 100%;
+    }
+  
+    .personal-details h1 {
+        position: relative;
+        right: -10px;
+        margin-bottom: -20px;
+        text-align: center;
+    }
+
+    .personal-details h4 {
+        margin-bottom: -15px;
+    }
+
+    .about-me h1 {
+        padding-left: 150px;
+        width: 650px;
+        text-align: center;
+        font-size: 35px;
+        margin-left: -150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    section {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    .about-me h1 {
+        padding-left: 130px;
+        width: 400px;
+        text-align: center;
+    }
+    
+    .form-container h1 {
+      top: 30px;
+      right: 200px;
+      font-size: 35px;
+    }
+  
+    .form-container {
+      flex-direction: column;
+      width: 140%;
+      margin-top: 20px;
+    }
+  
+    .register-btn {
+      padding: 14px;
+      font-size: 14px;
+      width: 100%;
+    }
+  
+  
+    .Banner {
+      display: none;
+    }
+  
+  }
+
+
+  @font-face {
+    font-family: "Almarena-Medium";
+    src: url(./Assets/Fonts/AlmarenaNeueDisplay-Medium-iF66afd734e6b8e.otf);
+  }
+
+  @font-face {
+    font-family: "Almarena-Regular";
+    src: url(./Assets/Fonts/AlmarenaNeueDisplay-Regular-iF66afd734ef9a2.otf);
+  }
+  
+  @font-face {
+    font-family: "Euclid-Light";
+    src: url(./Assets/Fonts/Euclid\ Circular\ A\ Light.ttf);
+  }
+
+  @font-face {
+    font-family: "Euclid-Regular";
+    src: url(./Assets/Fonts/Euclid\ Circular\ A\ Regular.ttf);
+  }
