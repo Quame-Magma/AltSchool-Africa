@@ -2,6 +2,39 @@ body {
     background-color: #a7a8cd;
 }
 
+/* Navigation Styling */
+nav {
+  background-color: wheat;
+  padding: 10px 20px;
+  font-family: "Euclid-Regular";
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(44, 37, 37);
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #024ec2;
+  color: white;
+}
+
+
 section {
     display: flex;
     align-items: center;

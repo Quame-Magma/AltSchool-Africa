@@ -1,118 +1,139 @@
 section {
-    display: grid;
+  display: grid;
 }
-
 
 .main {
-    background-color: white;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-left: 150px;
-    padding-top: 50px;
-    margin: 70px 70px 70px 0px;
+  background-color: white;
+  color: black;
+  font-family: "Euclid-Regular";
+  font-size: 20px;
+  padding-left: 150px;
+  padding-top: 50px;
+  margin: 70px 70px 70px 0px;
 }
 
+.main h1 {
+  font-family: "Almarena-Medium";
+  font-size: 40px;
+}
 
 .container {
-    height: 300px;
-    padding-left: 90px;
-    padding-top: 50px;
-    margin-top: 10px;
+  height: 300px;
+  padding-left: 90px;
+  padding-top: 50px;
+  margin-top: 10px;
 }
 
-
 .heading {
-    position: absolute;
-    background-color: rgb(220, 183, 19);
-    color: rgb(0, 0, 0);
-    top: 390px;
-    transform: translateX(-3%);
-    padding: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.467);
+  position: absolute;
+  background-color: rgb(220, 183, 19);
+  color: rgb(0, 0, 0);
+  top: 450px;
+  transform: translateX(-3%);
+  padding: 10px;
+  font-family: "Almarena-Medium";
+  font-size: 35px;
+  font-weight: bold;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.467);
 }
 
 .container p {
-    background-color: white;
-    width: 700px;
-    margin: 0px;
-    padding: 80px 50px 50px 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
+  background-color: white;
+  width: 700px;
+  margin: 0px;
+  padding: 90px 50px 50px 50px;
+  font-family: "Euclid-Regular";
+  font-size: 20px;
+  font-weight: 500;
 }
 
-
 span {
-    color: rgb(1, 109, 1);
-    font-weight: bold;
+  color: rgb(1, 109, 1);
+  font-weight: bold;
 }
 
 .card {
-    background-color: grey;
-    height: 500px;
+  background-color: grey;
+  height: 500px;
 }
 
-
-
-
 @media (max-width: 768px) {
-    .main {
-        padding-left: 50px;
-        padding-top: 30px;
-        margin: 50px 20px;
-    }
+  .main {
+    padding-left: 50px;
+    padding-top: 30px;
+    margin: 50px 20px;
+  }
 
-    .container {
-        padding-left: 30px;
-        padding-top: 30px;
-        height: auto; /* Allow height to adjust dynamically */
-    }
+  .container {
+    padding-left: 30px;
+    padding-top: 30px;
+    height: auto; /* Allow height to adjust dynamically */
+  }
 
-    .container p {
-        width: 100%; /* Make the paragraph container responsive */
-        padding: 70px 0px 0px 10px;
-    }
+  .container p {
+    width: 100%; /* Make the paragraph container responsive */
+    padding: 70px 0px 0px 10px;
+  }
 
-    .heading {
-        font-size: 1rem;
-        top: 320px; /* Adjust positioning */
-        transform: translateX(0); /* Center align for smaller screens */
-    }
+  .heading {
+    font-size: 1rem;
+    top: 320px; /* Adjust positioning */
+    transform: translateX(0); /* Center align for smaller screens */
+  }
 
-    .card {
-        height: auto; /* Adjust card height dynamically */
-    }
+  .card {
+    height: auto; /* Adjust card height dynamically */
+  }
 }
 
 /* For devices with a max width of 480px (mobile phones) */
 @media (max-width: 480px) {
-    .main {
-        padding-left: 20px;
-        padding-top: 20px;
-        margin: 30px 10px;
-        font-size: 0.9rem; /* Reduce font size for smaller screens */
-    }
+  .main {
+    padding-left: 20px;
+    padding-top: 20px;
+    margin: 30px 10px;
+    font-size: 0.9rem; /* Reduce font size for smaller screens */
+  }
 
-    .container {
-        padding-left: 10px;
-        padding-top: 20px;
-    }
+  .container {
+    padding-left: 10px;
+    padding-top: 20px;
+  }
 
-    .container p {
-        font-size: 0.9rem; /* Reduce font size */
-        padding: 70px 0px 0px 10px;
-    }
+  .container p {
+    font-size: 0.9rem; /* Reduce font size */
+    padding: 70px 0px 0px 10px;
+  }
 
-    .heading {
-        font-size: 0.9rem;
-        padding: 10px;
-        top: 280px;
-        transform: translateX(0);
-    }
+  .heading {
+    font-size: 0.9rem;
+    padding: 10px;
+    top: 280px;
+    transform: translateX(0);
+  }
 
-    .card {
-        height: auto; /* Full adjustability */
-        margin: 20px 0;
-    }
+  .card {
+    height: auto; /* Full adjustability */
+    margin: 20px 0;
+  }
+}
+
+@font-face {
+  font-family: "Almarena-Medium";
+  src: url(./Assets/Fonts/AlmarenaNeueDisplay-Medium-iF66afd734e6b8e.otf);
+}
+
+@font-face {
+  font-family: "Almarena-Regular";
+  src: url(./Assets/Fonts/AlmarenaNeueDisplay-Regular-iF66afd734ef9a2.otf);
+}
+
+@font-face {
+  font-family: "Euclid-Light";
+  src: url(./Assets/Fonts/Euclid\ Circular\ A\ Light.ttf);
+}
+
+@font-face {
+  font-family: "Euclid-Regular";
+  src: url(./Assets/Fonts/Euclid\ Circular\ A\ Regular.ttf);
 }
