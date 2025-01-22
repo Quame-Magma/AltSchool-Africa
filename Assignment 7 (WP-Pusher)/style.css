@@ -1,0 +1,199 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
+
+div.wrapper {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    h1 {
+        text-align: center;
+        color: rgb(255 0 0);
+    }
+}
+
+html {
+    /* declaration */
+    --red-hue: 0deg;
+    --red-sat: 100%;
+    --red-lit: 50%;
+
+    --red: hsl(var(--red-hue) var(--red-sat) var(--red-lit));
+    --dark-red: hsl(var(--red-hue) var(--red-sat) calc(var(--red-lit) - 20%));
+    --transparent-red: hsl(var(--red-hue) var(--red-sat) var(--red-lit) / 0.5);
+    --soft-red: hsl(var(--red-hue) calc(var(--red-sat) - 30%) calc(var(--red-lit) + 10%));
+}
+
+body {
+    background-color: #f5f8fa;
+}
+
+
+nav {
+    display: flex;
+    padding: 10px 50px;
+    margin: 10px;
+    font-family: "Euclid-Light";
+    font-size: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    display: flex;
+    justify-content: left;
+    width: 200px;
+    height: 60px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    gap: 20px;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(44, 37, 37);
+    font-size: 16px;
+    padding: 20px;
+    transition: background-color 0.3s;
+}
+
+nav .account-btn {
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.nav-hr {
+    position: relative;
+    width: 95%;
+    left: 30px;
+}
+
+.main-container {
+    border: 10px;
+    padding: 30px;
+    margin: 100px 300px;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* .main-container > div {
+    display: flex;
+    flex: 50%;
+} */
+
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+hr {
+    width: 50%;
+}
+
+
+@font-face {
+    font-family: "Almarena-Medium";
+    src: url(./Assets/Fonts/AlmarenaNeueDisplay-Medium-iF66afd734e6b8e.otf);
+}
+
+@font-face {
+    font-family: "Almarena-Regular";
+    src: url(./Assets/Fonts/AlmarenaNeueDisplay-Regular-iF66afd734ef9a2.otf);
+}
+
+@font-face {
+    font-family: "Euclid-Light";
+    src: url(./Assets/Fonts/Euclid\ Circular\ A\ Light.ttf);
+}
+
+@font-face {
+    font-family: "Euclid-Regular";
+    src: url(./Assets/Fonts/Euclid\ Circular\ A\ Regular.ttf);
+}
