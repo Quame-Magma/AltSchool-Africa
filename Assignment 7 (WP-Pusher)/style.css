@@ -2,19 +2,19 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* 2. Remove default margin */
 * {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    /* 3. Add accessible line-height */
-    line-height: 1.5;
-    /* 4. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
 }
 
 /* 5. Improve media defaults */
@@ -23,8 +23,8 @@ picture,
 video,
 canvas,
 svg {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 /* 6. Inherit fonts for form controls */
@@ -32,7 +32,7 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 /* 7. Avoid text overflows */
@@ -43,12 +43,12 @@ h3,
 h4,
 h5,
 h6 {
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* 8. Improve line wrapping */
 p {
-    text-wrap: pretty;
+  text-wrap: pretty;
 }
 
 h1,
@@ -57,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-    text-wrap: balance;
+  text-wrap: balance;
 }
 
 /*
@@ -65,135 +65,424 @@ h6 {
 */
 #root,
 #__next {
-    isolation: isolate;
+  isolation: isolate;
 }
 
 div.wrapper {
-    max-width: 750px;
-    margin: 0 auto;
-    padding: 0 1rem;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 1rem;
 
-    h1 {
-        text-align: center;
-        color: rgb(255 0 0);
-    }
+  h1 {
+    text-align: center;
+    color: rgb(255 0 0);
+  }
 }
 
 html {
-    /* declaration */
-    --red-hue: 0deg;
-    --red-sat: 100%;
-    --red-lit: 50%;
+  /* declaration */
+  --red-hue: 0deg;
+  --red-sat: 100%;
+  --red-lit: 50%;
 
-    --red: hsl(var(--red-hue) var(--red-sat) var(--red-lit));
-    --dark-red: hsl(var(--red-hue) var(--red-sat) calc(var(--red-lit) - 20%));
-    --transparent-red: hsl(var(--red-hue) var(--red-sat) var(--red-lit) / 0.5);
-    --soft-red: hsl(var(--red-hue) calc(var(--red-sat) - 30%) calc(var(--red-lit) + 10%));
+  --red: hsl(var(--red-hue) var(--red-sat) var(--red-lit));
+  --dark-red: hsl(var(--red-hue) var(--red-sat) calc(var(--red-lit) - 20%));
+  --transparent-red: hsl(var(--red-hue) var(--red-sat) var(--red-lit) / 0.5);
+  --soft-red: hsl(
+    var(--red-hue) calc(var(--red-sat) - 30%) calc(var(--red-lit) + 10%)
+  );
 }
 
 body {
-    background-color: #f5f8fa;
+  background-color: #f5f8fa;
 }
 
-
 nav {
-    display: flex;
-    padding: 10px 50px;
-    margin: 10px;
-    font-family: "Euclid-Light";
-    font-size: 15px;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  padding: 10px 50px;
+  margin: 10px;
+  font-family: "Euclid-Light";
+  font-size: 15px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav img {
-    display: flex;
-    justify-content: left;
-    width: 200px;
-    height: 60px;
+  display: flex;
+  justify-content: left;
+  width: 200px;
+  height: 60px;
 }
 nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: right;
-    gap: 20px;
+  display: flex;
+  list-style: none;
+  justify-content: right;
+  gap: 20px;
 }
 
 nav li {
-    margin: 0;
+  margin: 0;
 }
 
 nav a {
-    text-decoration: none;
-    color: rgb(44, 37, 37);
-    font-size: 16px;
-    padding: 20px;
-    transition: background-color 0.3s;
+  text-decoration: none;
+  color: rgb(44, 37, 37);
+  font-size: 16px;
+  padding: 20px;
+  transition: background-color 0.3s;
 }
 
 nav .account-btn {
-    border: 2px solid black;
-    border-radius: 5px;
-    text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
 }
 
 .nav-hr {
-    position: relative;
-    width: 95%;
-    left: 30px;
+  position: relative;
+  width: 95%;
+  left: 30px;
 }
 
 .main-container {
-    border: 10px;
-    padding: 30px;
-    margin: 100px 300px;
-    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 15px;
-    box-sizing: border-box;
+  background-color: white;
+  border: 10px;
+  border-radius: 7px;
+  padding: 0px 0px 0px 30px;
+  margin: 100px 300px;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  box-sizing: border-box;
+  height: auto;
 }
 
 section {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
 }
 
-/* .main-container > div {
-    display: flex;
-    flex: 50%;
-} */
-
-
 img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
+  color: #b9f5ff;
 }
 
 hr {
-    width: 50%;
+  width: 100%;
 }
 
+label {
+  font-family: "Euclid-Light";
+  font-size: 13px;
+  font-weight: 600;
+  margin: 5px 5px 5px 0;
+  padding: 5px;
+  /* display: block; */
+}
 
-@font-face {
-    font-family: "Almarena-Medium";
-    src: url(./Assets/Fonts/AlmarenaNeueDisplay-Medium-iF66afd734e6b8e.otf);
+.register-btn {
+  background-color: #038e7d;
+  color: white;
+  padding: 12px;
+  margin: 15px 0px 5px 0px;
+  font-family: "Euclid-Regular";
+  border: none;
+  width: 95%;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(200, 192, 192);
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: "Euclid-Light";
+  background-color: #edeff2;
+}
+
+input:focus {
+  outline: 2px solid black;
+}
+
+.payment-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.checkout-section {
+  flex: 1;
+  padding: 20px;
+  width: 10px;
+}
+
+.checkout-section .header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Euclid-Regular";
+}
+
+.checkout-section hr {
+  border: 1px solid #e5e5e5;
+  margin: 20px 0;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+  flex-grow: 1;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.form-group > div {
+  flex: 1;
+}
+
+legend {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Euclid-Regular";
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.help {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 0px;
+  font-family: "Euclid-Regular";
+}
+
+.help img {
+  width: 20px;
+}
+
+.help span {
+  font-weight: bold;
+  color: black;
+}
+
+.stripe {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-family: "Euclid-Regular";
+  border-radius: 7px;
+  background-color: #a0a4a9;
+  width: 200px;
+  padding: 7px 0;
+  position: relative;
+  left: 150px;
+}
+
+.stripe span {
+  font-weight: bold;
+  color: white;
+}
+
+.freelancer-section {
+  flex: 1;
+  background-color: #1179bf;
+  color: white;
+  height: auto;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.freelancer {
+  position: relative;
+  padding: 0 20px;
+  top: -100px;
+}
+
+.freelancer-section > div {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.freelancer-section img {
+  padding-left: 10px;
+  width: 30px;
+}
+
+.freelancer-section-wrapper {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.freelancer-section .header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  font-family: "Euclid-Regular";
+  font-size: 20px;
+  padding: 0px 15px;
+}
+
+.freelancer-section p {
+  font-size: 14px;
+  padding: 0px 15px;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  gap: 10px;
+  padding: 0px 15px;
+}
+
+.renewal {
+  width: 250px;
+  padding: 10px;
+}
+
+.currency h1 {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.currency h4 {
+  font-size: 16px;
+}
+
+.currency p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
+  color: #d0e7ff;
+}
+
+.features {
+  font-family: "Euclid-Light";
+  font-size: 15px;
+  padding: 10px;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.features ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.features hr {
+  margin: 15px;
+}
+
+.features a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+h4,
+p {
+  font-family: "Euclid-Light";
+}
+
+h3 {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.comment-section {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #e3eaf2;
+  padding: 10px;
+}
+
+.comment-section span {
+  font-weight: bold;
+  color: white;
+}
+
+.comment-section p img {
+  width: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.footer-section {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #31708f;
+  font-family: "Euclid-Light";
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .freelance-section {
+    order: -1;
+  }
 }
 
 @font-face {
-    font-family: "Almarena-Regular";
-    src: url(./Assets/Fonts/AlmarenaNeueDisplay-Regular-iF66afd734ef9a2.otf);
+  font-family: "Almarena-Medium";
+  src: url(./Assets/Fonts/AlmarenaNeueDisplay-Medium-iF66afd734e6b8e.otf);
 }
 
 @font-face {
-    font-family: "Euclid-Light";
-    src: url(./Assets/Fonts/Euclid\ Circular\ A\ Light.ttf);
+  font-family: "Almarena-Regular";
+  src: url(./Assets/Fonts/AlmarenaNeueDisplay-Regular-iF66afd734ef9a2.otf);
 }
 
 @font-face {
-    font-family: "Euclid-Regular";
-    src: url(./Assets/Fonts/Euclid\ Circular\ A\ Regular.ttf);
+  font-family: "Euclid-Light";
+  src: url(./Assets/Fonts/Euclid\ Circular\ A\ Light.ttf);
+}
+
+@font-face {
+  font-family: "Euclid-Regular";
+  src: url(./Assets/Fonts/Euclid\ Circular\ A\ Regular.ttf);
 }
