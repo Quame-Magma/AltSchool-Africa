@@ -96,7 +96,12 @@ body {
     width: 100%;
 }
 
+h2, h3, h4, li, a {
+    font-family: "Euclid-Regular";
+}
+
 p {
+    font-family: "Euclid-Regular";
     font-size: 0.9rem;
 }
 
@@ -142,16 +147,11 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 50px;
     text-decoration: none;
     list-style: none;
     font-family: "Euclid-Regular";
     color: black;
-}
-
-.nav-section .nav-links:not(.login-link, .trial-btn) {
-    padding-right: 0px;
-
 }
 
 .nav-links .trial-btn {
@@ -179,6 +179,12 @@ p {
     padding: 0 190px 0 0;
 }
 
+#features {
+    font-family: "Euclid-Regular";
+    border: none;
+    background-color: #f0ebe5;
+}
+
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -202,7 +208,7 @@ p {
     font-family: "Euclid-Regular";
     font-size: 3.5rem;
     width: 1300px;
-    padding: 20px 0;
+    padding: 20px 20px 0 0;
 }
 
 .hero-head span {
@@ -212,7 +218,7 @@ p {
 .hero-head img {
     position: relative;
     left: 80px;
-    padding: 0 0 20px 0;
+    padding: 0 0 10px 0;
 }
 
 .hero-head p {
@@ -220,20 +226,21 @@ p {
     font-size: 18px;
     width: 800px;
     font-weight: 600px;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
 }
 
 .hero-button {
     display: flex;
     flex-direction: row;
     gap: 40px;
-    padding: 0 0 40px 0;
+    padding: 0 0 20px 0;
 }
 
 .hero-button a {
     text-decoration: none;
     font-family: "Euclid-Regular";
     font-size: 15px;
+    color: #0065fe;
 }
 
 .hero-button .hero-colored-button {
@@ -250,7 +257,7 @@ p {
     border-radius: 20px;
     width: 700px;
     height: 200px;
-    padding: 30px 0;
+    padding: 20px 0 0 0;
     z-index: 10;
 }
 
@@ -279,7 +286,7 @@ p {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 960px;
+    top: 920px;
 }
 
 .vector-section img:first-child {
@@ -381,6 +388,232 @@ p {
 .feature p {
     padding-bottom: 35px;
 }
+
+.pricing-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.pricing-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.pricing-head img {
+    height: 30px;
+}
+
+.pricing-head h2 {
+    font-size: 2rem;
+}
+
+.pricing-head span {
+    color: #0065fe;
+}
+
+.pricing-heading p {
+    text-align: center;
+    width: 450px;
+    margin: 10px 20px;
+}
+
+.pricing-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+}
+
+.card {
+    border: 1px solid #0065fe;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.card > h2, h3, h4, ul {
+    padding: 15px;
+}
+
+.card > h3, h4 {
+    font-family: "Euclid-Light";
+}
+
+.card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card ul li {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    list-style: none;
+    padding: 7px;
+}
+
+.card li img {
+    width: 25px;
+    height: 25px;
+}
+
+#professional-card img {
+    filter: brightness(0) invert(1);
+}
+
+#basic-card {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#teams-card {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#professional-card {
+    background-color: #1e3448;
+    padding-top: 120px;
+    height: 700px;
+    color: white;
+}
+
+.pricing-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px 20px 50px 0;
+}
+
+.pricing-button a {
+    border: 1px solid #0065fe;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.pricing-button a:first-child {
+    color: #0065fe;
+    padding: 10px 15px;
+}
+
+.pricing-button a:last-child {
+    background-color: #0065fe;
+    padding: 10px 30px;
+    color: white;
+}
+
+.url-section {
+    background-color: #233b4f;
+}
+
+.form-box {
+    margin: 0 20px;
+    padding: 100px 0px;
+}
+
+.url-form {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 0px 500px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.form-group div {
+    flex: 1;
+}
+
+input,
+select:not(#features) {
+    font-family: "Euclid-Light";
+    width: 100%;
+    border: 1px solid #0065fe;
+    border-radius: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#top-input {
+    width: 100%;
+}
+
+
+input:focus {
+    outline: 1px solid #0065fe;
+}
+
+.url-form img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.url-btn a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-decoration: none;
+    border: 1px solid #0065fe;
+    background-color: #0065fe;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 60px;
+}
+
+.url-btn {
+    width: 100%;
+    padding: 10px;
+}
+
+.url-form p {
+    color: #0065fe;
+    margin: 0 10px;
+}
+
+.url-form p span {
+    font-weight: bold;
+}
+
+ 
+
+
+
+
+
+
+
+
+
 
 @font-face {
     font-family: "Almarena-Medium";
