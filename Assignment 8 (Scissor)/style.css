@@ -755,6 +755,7 @@ input:focus {
 .resource-links a {
   text-decoration: none;
   list-style: none;
+  color: black;
 }
 
 .resource-links .resource-group-1 {
