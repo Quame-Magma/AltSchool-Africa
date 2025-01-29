@@ -2,19 +2,19 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* 2. Remove default margin */
 * {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    /* 3. Add accessible line-height */
-    line-height: 1.5;
-    /* 4. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
 }
 
 /* 5. Improve media defaults */
@@ -23,8 +23,8 @@ picture,
 video,
 canvas,
 svg {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 /* 6. Inherit fonts for form controls */
@@ -32,7 +32,7 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 /* 7. Avoid text overflows */
@@ -43,12 +43,12 @@ h3,
 h4,
 h5,
 h6 {
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* 8. Improve line wrapping */
 p {
-    text-wrap: pretty;
+  text-wrap: pretty;
 }
 
 h1,
@@ -57,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-    text-wrap: balance;
+  text-wrap: balance;
 }
 
 /*
@@ -65,246 +65,254 @@ h6 {
 */
 #root,
 #__next {
-    isolation: isolate;
+  isolation: isolate;
 }
 
 div.wrapper {
-    max-width: 750px;
-    margin: 0 auto;
-    padding: 0 1rem;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 1rem;
 
-    h1 {
-        text-align: center;
-        color: rgb(255 0 0);
-    }
+  h1 {
+    text-align: center;
+    color: rgb(255 0 0);
+  }
 }
 
 html {
-    /* declaration */
-    --red-hue: 0deg;
-    --red-sat: 100%;
-    --red-lit: 50%;
+  /* declaration */
+  --red-hue: 0deg;
+  --red-sat: 100%;
+  --red-lit: 50%;
 
-    --red: hsl(var(--red-hue) var(--red-sat) var(--red-lit));
-    --dark-red: hsl(var(--red-hue) var(--red-sat) calc(var(--red-lit) - 20%));
-    --transparent-red: hsl(var(--red-hue) var(--red-sat) var(--red-lit) / 0.5);
-    --soft-red: hsl(var(--red-hue) calc(var(--red-sat) - 30%) calc(var(--red-lit) + 10%));
+  --red: hsl(var(--red-hue) var(--red-sat) var(--red-lit));
+  --dark-red: hsl(var(--red-hue) var(--red-sat) calc(var(--red-lit) - 20%));
+  --transparent-red: hsl(var(--red-hue) var(--red-sat) var(--red-lit) / 0.5);
+  --soft-red: hsl(
+    var(--red-hue) calc(var(--red-sat) - 30%) calc(var(--red-lit) + 10%)
+  );
 }
 
 body {
-    background-color: #f0ebe5;
-    width: 100%;
+  background-color: #f0ebe5;
+  width: 100%;
 }
 
-h2, h3, h4, li, a {
-    font-family: "Euclid-Regular";
+h2,
+h3,
+h4,
+li,
+a {
+  font-family: "Euclid-Regular";
 }
 
 p {
-    font-family: "Euclid-Regular";
-    font-size: 0.9rem;
+  font-family: "Euclid-Regular";
+  font-size: 0.9rem;
 }
 
 .nav-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    padding: 20px 130px;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  padding: 20px 130px;
+  width: 100%;
 }
 
 .nav-section .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5px;
 }
 
 .nav-section .logo img:first-child {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
-
 .nav-section .logo img {
-    width: 2px;
-    height: 25px;
+  width: 2px;
+  height: 25px;
 }
 
 .nav-section .logo h2 {
-    font-family: "Euclid-Regular";
-    font-size: 1.5rem;
-    color: #0065fe;
+  font-family: "Euclid-Regular";
+  font-size: 1.5rem;
+  color: #0065fe;
 }
 
-.nav-section .logo, .nav-section .nav-links {
-    justify-content: space-evenly;
+.nav-section .logo,
+.nav-section .nav-links {
+  justify-content: space-evenly;
 }
 
-.nav-section ul, .nav-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    text-decoration: none;
-    list-style: none;
-    font-family: "Euclid-Regular";
-    color: black;
+.nav-section ul,
+.nav-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Euclid-Regular";
+  color: black;
 }
 
 .nav-links .trial-btn {
-    padding: 10px 20px;
-    background-color: #0065fe;
-    border-radius: 120px;
+  padding: 10px 20px;
+  background-color: #0065fe;
+  border-radius: 120px;
 }
 
-.nav-links .login-link a, .nav-links .trial-btn a {
-    gap: 20px;
+.nav-links .login-link a,
+.nav-links .trial-btn a {
+  gap: 20px;
 }
 
 .nav-links .trial-btn a {
-    color: white;
+  color: white;
 }
 
 .nav-links .login-link a {
-    color: #0065fe;
-    padding-right: 20px;
+  color: #0065fe;
+  padding-right: 20px;
 }
 
 .nav-links a:not(.login-link, .trial-btn) a {
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 190px 0 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 190px 0 0;
 }
 
 #features {
-    font-family: "Euclid-Regular";
-    border: none;
-    background-color: #f0ebe5;
+  font-family: "Euclid-Regular";
+  border: none;
+  background-color: #f0ebe5;
 }
 
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
 }
 
 .hero-head,
 .hero-button,
 .link-arrow-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 20px 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px 240px;
 }
 
 .hero-head h2 {
-    font-family: "Euclid-Regular";
-    font-size: 3.5rem;
-    width: 1300px;
-    padding: 20px 20px 0 0;
+  font-family: "Euclid-Regular";
+  font-size: 3.5rem;
+  width: 1300px;
+  padding: 20px 20px 0 0;
 }
 
 .hero-head span {
-    color: #0065fe;
+  color: #0065fe;
 }
 
 .hero-head img {
-    position: relative;
-    left: 80px;
-    padding: 0 0 10px 0;
+  position: relative;
+  left: 80px;
+  padding: 0 0 10px 0;
 }
 
 .hero-head p {
-    font-family: "Euclid-Regular";
-    font-size: 18px;
-    width: 800px;
-    font-weight: 600px;
-    padding: 20px 0 0 0;
+  font-family: "Euclid-Regular";
+  font-size: 18px;
+  width: 800px;
+  font-weight: 600px;
+  padding: 20px 0 0 0;
 }
 
 .hero-button {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    padding: 0 0 20px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 0 0 20px 0;
 }
 
 .hero-button a {
-    text-decoration: none;
-    font-family: "Euclid-Regular";
-    font-size: 15px;
-    color: #0065fe;
+  text-decoration: none;
+  font-family: "Euclid-Regular";
+  font-size: 15px;
+  color: #0065fe;
 }
 
 .hero-button .hero-colored-button {
-    border: 1px solid #0065fe;
-    background-color: #0065fe;
-    border-radius: 50px;
-    padding: 10px 30px;
-    color: white;
+  border: 1px solid #0065fe;
+  background-color: #0065fe;
+  border-radius: 50px;
+  padding: 10px 30px;
+  color: white;
 }
 
 .link-arrow-section {
-    background-color: #eaeff3;
-    border: 1px solid #0065fe;
-    border-radius: 20px;
-    width: 700px;
-    height: 200px;
-    padding: 20px 0 0 0;
-    z-index: 10;
+  background-color: #eaeff3;
+  border: 1px solid #0065fe;
+  border-radius: 20px;
+  width: 700px;
+  height: 200px;
+  padding: 20px 0 0 0;
+  z-index: 10;
 }
 
-.link-arrow-section img:first-child{
-    display: flex;
-    align-items: flex-start;
-    position: relative;
-    right: 100px;
+.link-arrow-section img:first-child {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  right: 100px;
 }
 
 .link-arrow-section p {
-    width: 400px;
-    font-family: "Euclid-Regular";
-    text-align: center;
+  width: 400px;
+  font-family: "Euclid-Regular";
+  text-align: center;
 }
 
 .oval-icon {
-    position: relative;
-    top: -250px;
-    right: 220px;
+  position: relative;
+  top: -250px;
+  right: 220px;
 }
 
 .vector-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 920px;
 }
 
 .vector-section img:first-child {
-    position: relative;
-    top: 80px;
+  position: relative;
+  top: 80px;
 }
 
 .vector-section img:last-child {
-    width: 1800px;
+  width: 1800px;
 }
 
 .stats-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #f9fbfd;
-    height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #f9fbfd;
+  height: 150px;
 }
 
 .stats-text,
@@ -312,480 +320,482 @@ p {
 .stats-links,
 .stats-clicked,
 .stats-integration {
-    font-family: "Euclid-Regular";
+  font-family: "Euclid-Regular";
 }
 
 .stats-users,
 .stats-links,
 .stats-clicked,
 .stats-integration:not(.stats-text) {
-    width: 150px;
-    text-align: left;
+  width: 150px;
+  text-align: left;
 }
 
 .stats-text h2 {
-    font-size: 2rem;
-    font-weight: 900px;
+  font-size: 2rem;
+  font-weight: 900px;
 }
 
 .stats-text span {
-    color: #0065fe;
+  color: #0065fe;
 }
 
 .why-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: white;
-    font-family: "Euclid-Regular";
-    padding: 70px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: white;
+  font-family: "Euclid-Regular";
+  padding: 70px 0;
 }
 
 .why-scissor,
 .features-section {
-    margin: 0 100px;
-    width: 400px;
+  margin: 0 100px;
+  width: 400px;
 }
 
-
 .why-scissor-head {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    gap: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
 }
 
 .why-scissor-head img {
-    height: 30px;
+  height: 30px;
 }
 
 .why-scissor-head h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .why-scissor-head span {
-    color: #0065fe;
+  color: #0065fe;
 }
 
 .features-section {
-    display: flex;
-    gap: 30px;
-    width: 50%;
+  display: flex;
+  gap: 30px;
+  width: 50%;
 }
 
 .feature img {
-    border: 1px solid #0065fe;
-    border-radius: 190px;
-    padding: 10px;
-    background-color: #e4efff;
+  border: 1px solid #0065fe;
+  border-radius: 190px;
+  padding: 10px;
+  background-color: #e4efff;
 }
 
 .feature h3 {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 
 .feature p {
-    padding-bottom: 35px;
+  padding-bottom: 35px;
 }
 
 .pricing-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
 }
 
 .pricing-head {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
 .pricing-head img {
-    height: 30px;
+  height: 30px;
 }
 
 .pricing-head h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .pricing-head span {
-    color: #0065fe;
+  color: #0065fe;
 }
 
 .pricing-heading p {
-    text-align: center;
-    width: 450px;
-    margin: 10px 20px;
+  text-align: center;
+  width: 450px;
+  margin: 10px 20px;
 }
 
 .pricing-body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .cards {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px;
 }
 
 .card {
-    border: 1px solid #0065fe;
-    border-radius: 10px;
-    padding: 40px;
+  border: 1px solid #0065fe;
+  border-radius: 10px;
+  padding: 40px;
 }
 
-.card > h2, h3, h4, ul {
-    padding: 15px;
+.card > h2,
+h3,
+h4,
+ul {
+  padding: 15px;
 }
 
-.card > h3, h4 {
-    font-family: "Euclid-Light";
+.card > h3,
+h4 {
+  font-family: "Euclid-Light";
 }
 
 .card ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .card ul li {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    gap: 10px;
-    list-style: none;
-    padding: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  list-style: none;
+  padding: 7px;
 }
 
 .card li img {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
 #professional-card img {
-    filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 #basic-card {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 #teams-card {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 #professional-card {
-    background-color: #1e3448;
-    padding-top: 120px;
-    height: 700px;
-    color: white;
+  background-color: #1e3448;
+  padding-top: 120px;
+  height: 700px;
+  color: white;
 }
 
 .pricing-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 20px;
-    padding: 20px 20px 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding: 20px 20px 50px 0;
 }
 
 .pricing-button a {
-    border: 1px solid #0065fe;
-    border-radius: 20px;
-    text-decoration: none;
+  border: 1px solid #0065fe;
+  border-radius: 20px;
+  text-decoration: none;
 }
 
 .pricing-button a:first-child {
-    color: #0065fe;
-    padding: 10px 15px;
+  color: #0065fe;
+  padding: 10px 15px;
 }
 
 .pricing-button a:last-child {
-    background-color: #0065fe;
-    padding: 10px 30px;
-    color: white;
+  background-color: #0065fe;
+  padding: 10px 30px;
+  color: white;
 }
 
 .url-section {
-    background-color: #233b4f;
+  background-color: #233b4f;
 }
 
 .form-box {
-    margin: 0 20px;
-    padding: 100px 0px;
+  margin: 0 20px;
+  padding: 100px 0px;
 }
 
 .url-form {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 10px;
-    padding: 40px;
-    border: 1px solid;
-    border-radius: 10px;
-    margin: 0px 500px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px;
+  border: 1px solid;
+  border-radius: 10px;
+  margin: 0px 500px;
 }
 
 .form-group {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 10px;
-    flex-grow: 1;
-    flex-wrap: nowrap;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 
 .form-group div {
-    flex: 1;
+  flex: 1;
 }
 
 input,
 select:not(#features) {
-    font-family: "Euclid-Light";
-    width: 100%;
-    border: 1px solid #0065fe;
-    border-radius: 10px;
-    padding: 8px;
-    box-sizing: border-box;
+  font-family: "Euclid-Light";
+  width: 100%;
+  border: 1px solid #0065fe;
+  border-radius: 10px;
+  padding: 8px;
+  box-sizing: border-box;
 }
 
 #top-input {
-    width: 100%;
+  width: 100%;
 }
 
-
 input:focus {
-    outline: 1px solid #0065fe;
+  outline: 1px solid #0065fe;
 }
 
 .url-form img {
-    width: 20px;
-    height: 20px;
-    filter: brightness(0) invert(1);
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
 }
 
 .url-btn a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    text-decoration: none;
-    border: 1px solid #0065fe;
-    background-color: #0065fe;
-    color: white;
-    border-radius: 20px;
-    padding: 10px 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-decoration: none;
+  border: 1px solid #0065fe;
+  background-color: #0065fe;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 60px;
 }
 
 .url-btn {
-    width: 100%;
-    padding: 10px;
+  width: 100%;
+  padding: 10px;
 }
 
 .url-form p {
-    color: #0065fe;
-    margin: 0 10px;
+  color: #0065fe;
+  margin: 0 10px;
 }
 
 .url-form p span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
- .faq-section {
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
- }
+.faq-section {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
- .faq-content {
-    margin: 0 300px;
- }
+.faq-content {
+  margin: 0 300px;
+}
 
- .faq-head {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding-top: 30px;
- }
+.faq-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 30px;
+}
 
- .faq-head h2 {
-    font-size: 2rem;
- }
+.faq-head h2 {
+  font-size: 2rem;
+}
 
- .faq-head img {
-    height: 30px;
- }
+.faq-head img {
+  height: 30px;
+}
 
- .faq-body {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-bottom: 50px;
- }
+.faq-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 50px;
+}
 
 .faq-body h4 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .faq-body img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .faq-body p {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 .get-started-link-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    background-color: #233b4f;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: #233b4f;
+  text-align: center;
 }
 
 .get-started-link-content {
-    margin: 100px;
+  margin: 100px;
 }
 
 .get-started-link-section-head {
-    font-size: 2rem;
-    color: white;
-    padding-bottom: 40px;
+  font-size: 2rem;
+  color: white;
+  padding-bottom: 40px;
 }
 
 .get-started-link-content a {
-    text-decoration: none;
-    color: white;
-    border: 1px solid #0065fe;
-    border-radius: 20px;
-    padding: 10px 20px;
-    background-color: #0065fe;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #0065fe;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #0065fe;
 }
 
 .footer-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: #f5fdfe;
-    padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #f5fdfe;
+  padding: 20px 0;
 }
 
 .footer-section img {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .logo-and-social-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo-and-social-section .logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
 .logo-and-social-section .logo > img:first-child {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .logo-and-social-section .logo img {
-    width: 2px;
-    height: 25px;
-    color: black;
-    filter: sepia(1);
+  width: 2px;
+  height: 25px;
+  color: black;
+  filter: sepia(1);
 }
 
 .socials {
-    display: flex;
-    gap: 10px;
-    padding: 40px 0;
+  display: flex;
+  gap: 10px;
+  padding: 40px 0;
 }
 
 .resource-links {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
 }
 
 .logo-and-social-section,
 .resource-links {
-    width: 100%;
+  width: 100%;
 }
 
 .resource-links li,
 .resource-links a {
-    text-decoration: none;
-    list-style: none;
+  text-decoration: none;
+  list-style: none;
 }
 
 .resource-links .resource-group-1 {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: start;
-    gap: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  gap: 30px;
 }
 
 .resource-links .resource-group-2 {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: start;
-    gap: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  gap: 30px;
 }
 
 .copyright {
-    background-color: #f5fdfe;
-    display: flex;
-    justify-content: end;
-    padding: 20px 90px;
+  background-color: #f5fdfe;
+  display: flex;
+  justify-content: end;
+  padding: 20px 90px;
 }
 
 @font-face {
-    font-family: "Almarena-Medium";
-    src: url(./Assets/Fonts/AlmarenaNeueDisplay-Medium-iF66afd734e6b8e.otf);
+  font-family: "Almarena-Medium";
+  src: url(./Assets/Fonts/AlmarenaNeueDisplay-Medium-iF66afd734e6b8e.otf);
 }
 
 @font-face {
-    font-family: "Almarena-Regular";
-    src: url(./Assets/Fonts/AlmarenaNeueDisplay-Regular-iF66afd734ef9a2.otf);
+  font-family: "Almarena-Regular";
+  src: url(./Assets/Fonts/AlmarenaNeueDisplay-Regular-iF66afd734ef9a2.otf);
 }
 
 @font-face {
-    font-family: "Euclid-Light";
-    src: url(./Assets/Fonts/Euclid\ Circular\ A\ Light.ttf);
+  font-family: "Euclid-Light";
+  src: url(./Assets/Fonts/Euclid\ Circular\ A\ Light.ttf);
 }
 
 @font-face {
-    font-family: "Euclid-Regular";
-    src: url(./Assets/Fonts/Euclid\ Circular\ A\ Regular.ttf);
+  font-family: "Euclid-Regular";
+  src: url(./Assets/Fonts/Euclid\ Circular\ A\ Regular.ttf);
 }
