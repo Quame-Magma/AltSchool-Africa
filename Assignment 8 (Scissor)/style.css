@@ -425,8 +425,7 @@ p {
 
 .pricing-heading p {
   text-align: center;
-  width: 450px;
-  margin: 10px 20px;
+  margin: 10px 100px;
 }
 
 .pricing-body {
@@ -828,6 +827,11 @@ input:focus {
     padding: 0;
   }
 
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
   .hero-head,
   .hero-button,
   .link-arrow-section {
@@ -841,6 +845,9 @@ input:focus {
 
   .hero-head img {
     left: 0;
+    width: 140px;
+    height: 20px;
+    padding-left: 70px;
   }
 
   .hero-head p {
@@ -858,7 +865,7 @@ input:focus {
   }
 
   .link-arrow-section {
-    width: 100%;
+    width: 500px;
     height: auto;
     padding: 10px;
   }
@@ -876,8 +883,7 @@ input:focus {
   }
 
   .vector-section {
-    top: auto;
-    margin-top: 20px;
+    display: none;
   }
 
   .vector-section img:last-child {
@@ -887,6 +893,7 @@ input:focus {
   .stats-section {
     flex-direction: column;
     height: auto;
+    padding: 30px 0;
   }
 
   .stats-text,
@@ -894,11 +901,16 @@ input:focus {
   .stats-links,
   .stats-clicked,
   .stats-integration {
+    display: flex;
     width: 100%;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 
   .why-section {
+    width: 100%;
     flex-direction: column;
     padding: 20px;
   }
@@ -910,8 +922,9 @@ input:focus {
   }
 
   .features-section {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
+    padding-top: 30px;
   }
 
   .feature {
@@ -927,31 +940,37 @@ input:focus {
   }
 
   .cards {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .card {
     width: 100%;
     margin-bottom: 20px;
+    height: 700px;
   }
 
   #basic-card,
   #teams-card,
   #professional-card {
     border-radius: 10px;
+    font-size: 0.8rem;
+  }
+
+  #professional-card {
+    height: 850px;
   }
 
   .pricing-button {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .url-form {
-    margin: 0 10px;
+    margin: 0 50px;
     padding: 20px;
   }
 
   .form-group {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .faq-content {
@@ -960,6 +979,7 @@ input:focus {
 
   .get-started-link-content {
     margin: 20px;
+    padding-bottom: 30px;
   }
 
   .footer-section {
@@ -969,26 +989,49 @@ input:focus {
 
   .resource-links .resource-group-1,
   .resource-links .resource-group-2 {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
-/* Mobile Styles for <= 480px */
 @media (max-width: 480px) {
+  body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+
   .nav-section {
-    padding: 5px 10px;
+    width: 100vw;
+    padding-left: 100px;
+    overflow-x: hidden;
   }
 
   .nav-section .logo h2 {
     font-size: 1rem;
   }
 
+  .hero-section {
+    width: 100vw;
+    padding-left: 100px;
+  }
+
+  .hero-head img {
+    position: relative;
+    left: -100px;
+  }
+
   .hero-head h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    width: 500px;
   }
 
   .hero-head p {
     font-size: 14px;
+    width: 400px;
+    padding-right: 20px;
   }
 
   .hero-button a {
@@ -1001,15 +1044,17 @@ input:focus {
 
   .link-arrow-section {
     border-radius: 10px;
+    padding: 30px;
   }
 
-  .link-arrow-section img:first-child {
-    display: none;
-    /* Hide image for very small screens if not critical */
+  .about-section {
+    width: 100vw;
+    overflow-y: hidden;
   }
 
   .stats-section {
-    padding: 10px;
+    width: 100%;
+    padding-left: 140px;
   }
 
   .stats-text h2 {
@@ -1018,6 +1063,10 @@ input:focus {
 
   .why-scissor-head h2 {
     font-size: 1.5rem;
+  }
+
+  .features-section {
+    flex-direction: column;
   }
 
   .feature img {
@@ -1038,6 +1087,10 @@ input:focus {
   .card h3,
   .card h4 {
     font-size: 1rem;
+  }
+
+  .cards {
+    flex-direction: column;
   }
 
   .pricing-button a {
@@ -1062,6 +1115,10 @@ input:focus {
     font-size: 13px;
   }
 
+  .footer-section {
+    width: 100%;
+  }
+
   .footer-section img {
     width: 25px;
     height: 25px;
@@ -1076,7 +1133,18 @@ input:focus {
     font-size: 0.8rem;
   }
 
+  .resource-links {
+    flex-direction: column;
+  }
+
+  .resource-links .resource-group-1,
+  .resource-links .resource-group-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
   .copyright {
+    width: 100%;
     padding: 10px;
     font-size: 0.8rem;
   }
