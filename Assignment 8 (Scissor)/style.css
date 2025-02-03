@@ -402,13 +402,15 @@ p {
   align-items: center;
   justify-content: center;
   background-color: white;
+  width: 100vw;
 }
 
 .pricing-head {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;text-align: center;
   gap: 5px;
+  width: 100vw;
 }
 
 .pricing-head img {
@@ -544,7 +546,7 @@ h4 {
   padding: 40px;
   border: 1px solid;
   border-radius: 10px;
-  margin: 0px 500px;
+  margin: 0px 350px;
 }
 
 .form-group {
@@ -993,9 +995,9 @@ input:focus {
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 390px) and (max-width: 480px) {
   body {
-    width: 100vw;
+    width: 180%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1004,8 +1006,8 @@ input:focus {
   }
 
   .nav-section {
-    width: 100vw;
-    padding-left: 100px;
+    width: 100%;
+    padding-left: 50px;
     overflow-x: hidden;
   }
 
@@ -1014,8 +1016,8 @@ input:focus {
   }
 
   .hero-section {
-    width: 100vw;
-    padding-left: 100px;
+    width: 100%;
+    padding-left: 50px;
   }
 
   .hero-head img {
@@ -1034,6 +1036,10 @@ input:focus {
     padding-right: 20px;
   }
 
+  .hero-button {
+    padding-right: 30px;
+  }
+
   .hero-button a {
     font-size: 13px;
   }
@@ -1045,16 +1051,16 @@ input:focus {
   .link-arrow-section {
     border-radius: 10px;
     padding: 30px;
+    width: 80%;
   }
 
   .about-section {
-    width: 100vw;
+    width: 100%;
     overflow-y: hidden;
   }
 
   .stats-section {
     width: 100%;
-    padding-left: 140px;
   }
 
   .stats-text h2 {
@@ -1067,6 +1073,7 @@ input:focus {
 
   .features-section {
     flex-direction: column;
+    width: 100%;
   }
 
   .feature img {
@@ -1093,17 +1100,41 @@ input:focus {
     flex-direction: column;
   }
 
+  .pricing-section {
+    width: 100%;
+  }
+
+  .pricing-heading {
+    width: 100%;
+  }
+
+  .pricing-head h2 {
+    width: 458px;
+  }
+
   .pricing-button a {
     padding: 8px 15px;
     font-size: 13px;
+  }
+
+  .url-section {
+    width: 100%;
   }
 
   .url-form {
     padding: 10px;
   }
 
+  .faq-section {
+    width: 100%;
+  }
+
   .faq-head h2 {
     font-size: 1.5rem;
+  }
+
+  .get-started-link-section {
+    width: 100%;
   }
 
   .get-started-link-section-head {
